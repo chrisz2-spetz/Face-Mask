@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Face Mask Recognition</title>
+    <link rel="stylesheet" href="face_mask.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1>Face Mask Recognition</h1>
+      <p>The accuracy may not be perfect and have possibility of overfitting</p>
+      <div id="picshow">
+        <img src="data/without_mask/without_mask_1.jpg" alt="data/without_mask/without_mask_1.jpg" class="pic"/><br>
+        <h1>without Mask</h1>
+      </div>
+      <form method="POST" enctype=multipart/form-data>
+        <input style="width: fit-content;"class='button'type=file name=file accept="image/*">
+        <input class='button' style='color: black;'type=submit value=Predict>
+    </form>
+    <form action="/">
+        <button style="color: black" class="button">Clear Output</button>
+    </form>
+    </div>
+  </body>
+</html>
